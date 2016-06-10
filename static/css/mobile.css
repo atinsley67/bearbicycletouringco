@@ -1,0 +1,148 @@
+@media (max-width: 450px) {
+  .mainContent {
+    padding-left: 2%;
+    padding-right: 2%;
+    max-width: 100%;
+  }
+
+
+  .topper {
+  	background-color: white;
+  	min-height: 100px;
+  	padding-left: 2%;
+  	margin-right: 2%;
+    min-height: 50px;
+  }
+
+  .topper img {
+  	max-width: 50%;
+    height: auto;
+  }
+
+  .bannerText {
+  	font-size: 12pt;
+  }
+
+  .mainContent img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Mobile friendly Menu */
+
+  .topperMenu {
+    position: absolute;
+    right: 0;
+    top:  0;
+    height: 30px;
+    width:60px;
+    margin: 15px 10px 0px 0px;
+    background-color: #ddd;
+    font-weight: normal;
+    padding: 3px 12px 0px 12px;
+    font-size: 14pt;
+    border-bottom: 2px solid #afdde9;
+    text-align: center;
+  }
+
+  .topperMenu:before {
+    content: "Menu";
+  }
+
+  .topperButtonList {
+    position: relative;
+    top: 25px;
+    margin: 5px;
+    padding-bottom:3px;
+    z-index: 90;
+
+    /* disable visibility by default, delay to enable clicks */
+    visibility: hidden;
+    transition: visibility 0.5s;
+  }
+
+  .topperMenu:focus, .topperMenu:active {
+    background-color: #ccc;
+
+  }
+
+   .topperMenu:focus .topperButtonList{
+    display: block;
+    background-color: #ddd;
+    visibility: visible;
+  }
+
+  .topperButton {
+    /*float:right;*/
+    background-color: #ddd;
+    /* top:  0px; */
+    min-height: 30px;
+    min-width: 130px;
+    display: block;
+    font-weight: normal;
+    margin-left:5px;
+    margin-top:0px;
+    padding: 3px 7px 0px 7px;
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+    font-size: 14pt;
+    border-bottom: 2px solid #afdde9;
+}
+
+  .topperButton a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .dropDown ul{
+    position: absolute;
+    top:28px;
+    left:-140px;
+    width:140px;
+    padding: 0;
+    margin: 0;
+    display: none;
+    z-index: 100;
+  }
+
+  .topperButton:hover {
+      background-color: #ccc;
+  }
+
+  .topperButton:hover .dropDown ul {
+    display: block;
+    background-color: #ddd;
+  }
+
+  .dropDownItem {
+    background-color: #ddd;
+    float: left;
+    min-height: 25px;
+    width: 140px;
+    padding: 5px 5px 5px 5px;
+    font: bold;
+    position: relative;
+    list-style: none;
+    z-index: 100;
+    border-bottom: 1px solid #afdde9;
+  }
+
+  .dropDownItem:hover {
+    background-color: #ccc;
+  }
+
+  .pageBanner {
+    max-width: 100%;
+  }
+
+  .pageBanner  img{
+    max-height:120px;
+    width: auto;
+    object-fit: none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+  }
+
+
+
+}

@@ -1,0 +1,63 @@
+<link type="text/css" rel="stylesheet" href="<?php echo $rel_url?>static/css/contact_form.css" />
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="pageBanner">
+  <img width="1000" height="200" src="static/images/contactBanner.jpg" alt="Contact banner exploring the world by bicycle"/>
+</div>
+<div class="mainContent">
+    <h1>Book a tour, or just get in touch</h1>
+    <p>Interested in an up coming tour? Want us to arrange a tour on a date to suit your group? Would like to discuss something more bespoke?</p>
+
+
+    <div class="contentFeature">
+      <form class="contactForm" action="contactform/submit" method="POST">
+        <ul>
+          <li>
+            <label>Your name:</label>
+            <input type="text" name="name" required/>
+            <span class="requiredNotification">* Required Field</span>
+          </li>
+          <li>
+            <label>Your email address:</label>
+            <input type="email" name="email" required/>
+          </li>
+          <li>
+            <label>Which tour are you interested in?</label>
+        	  <select name="whichTour" required>
+              <option disabled selected value> -- select an option -- </option>
+              <option value="dayEasy">Canals, Lanes and Shopping tour</option>
+              <option value="dayMedium">Historic River Towns tour</option>
+              <option value="dayGems">NJ Countryside Gems tour</option>
+  		        <option value="Delaware Valley">Tour of the Delaware Valley 4-day</option>
+              <option value="Easton">Easton two-day</option>
+              <option value="Custom">Custom tour</option>
+              <option value="Custom">Corporate events</option>
+              <option value="Question">I just have some questions first</option>
+  		      </select>
+          </li>
+        <li>
+          <label>Message:</label>
+          <textarea name="body" cols="40" rows="6"></textarea>
+        </li>
+        <li>
+          <button class="submit" type="submit">Submit</button>
+        </li>
+      </ul>
+      </form>
+    </div>
+
+    <p>Or you can email us at <a href="mailto:tours@bearbicycletouring.com">tours@bearbicycletouring.com</a></p>
+
+    <p>We're on Facebook!</p>
+
+    <div class="fb-page" data-href="https://www.facebook.com/bearbicycletouringco" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Garmin"><a href="https://www.facebook.com/bearbicycletouringco">Bear Bicycle Touring Co.</a></blockquote></div></div>
+</div>
+<p/>
