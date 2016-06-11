@@ -66,11 +66,13 @@
 
   }
 
-   .topperMenu:focus .topperButtonList{
+   .topperMenu:focus, .topperMenu:hover .topperButtonList{
     display: block;
     background-color: #ddd;
     visibility: visible;
   }
+
+
 
   .topperButton {
     /*float:right;*/
@@ -141,6 +143,50 @@
     width: auto;
     object-fit: none; /* Do not scale the image */
     object-position: center; /* Center the image within the element */
+  }
+
+  .bannerText {
+    max-width: 50%;
+  }
+
+  .bannerText.long{
+    max-width: 60%;
+  }
+
+  .bannerText p {
+    margin: 5px;
+  }
+
+  .featureBox ul {
+    text-align: center;
+  }
+
+  .featureBox li{
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+    border-bottom: 2px solid #afdde9;
+    padding-bottom: 10px;
+    border-right: none;
+    min-height: 0px;
+  }
+
+  .featureBox h1 {
+    min-height: 0px;
+    height: auto;
+  }
+
+  .rhLinks {
+    display: none;
+  }
+
+  .post img {
+    max-width: 40%
+  }
+
+  .post h2 {
+    font-size: 16pt;
+    margin: 5px;
   }
 
 

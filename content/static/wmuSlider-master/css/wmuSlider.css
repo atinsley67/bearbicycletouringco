@@ -75,6 +75,16 @@
     left: 45%;
     bottom: 10px;
 }
+
+@media (max-width: 450px) {
+
+    .wmuSliderPagination {
+        left: 25%;
+        bottom: 3px;
+    }
+
+}
+
 .wmuSliderPagination li {
     float: left;
     margin: 0 5px 0 0;

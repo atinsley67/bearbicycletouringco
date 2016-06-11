@@ -19,7 +19,7 @@
     <div id="fb-root"></div>
     <div class="topper">
       <a href="./<?php echo $rel_url?>"><img class = "mainLogo" src="<?php echo $rel_url?>static/images/bearbicyclelogo-small.png" alt="Bear Bicycle Touring Co. logo"/></a>
-      <div class="topperMenu"  tabindex="0">
+      <div class="topperMenu" ontouchstart="" tabindex="0">
         <ul class="topperButtonList">
           <li class="topperButton">
             <a href="<?php echo $rel_url?>contact">Get in touch<a/>
