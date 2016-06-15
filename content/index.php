@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     	echo "<h1>Opps! We don't have that page.</h1>";
     	echo "<p>" . $uri . "</p>";
     }
-    readfile("static/bottom.html");
+    include("./app/bottom.html.php");
 
 } elseif ($_SERVER['REQUEST_METHOD'] === 'GET') {
 	if (preg_match('/^\/static\/.*/', $uri) || preg_match('/.*\.ico/', $uri) ){
@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	    	echo "<h1>Opps! We don't have that page.</h1>";
 	    	echo "<p>" . $uri . "</p>";
 	    }
-	    readfile("static/bottom.html");
+	    include("app/bottom.html.php");
 	}
 } else {
 	echo "<h1>Opps! We don't have that page.</h1>";

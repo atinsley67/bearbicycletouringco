@@ -22,13 +22,17 @@
       <div class="topperMenu" ontouchstart="" tabindex="0">
         <ul class="topperButtonList">
           <li class="topperButton">
-            <a href="<?php echo $rel_url?>contact">Get in touch<a/>
+            <a href="<?php echo $rel_url?>daytours">Day Tours<a/>
+            <div class="dropDown">
+              <ul>
+                <li class="dropDownItem"><a href="<?php echo $rel_url?>dayEasy">Canals, Lanes and Shopping</a></li>
+                <li class="dropDownItem"><a href="<?php echo $rel_url?>dayMedium">Historic River Towns</a></li>
+                <li class="dropDownItem"><a href="<?php echo $rel_url?>dayGems">New Jersey Countryside Gems</a></li>
+              </ul>
+            </div>
           </li>
           <li class="topperButton">
-            <a href="<?php echo $rel_url?>about">About Us<a/>
-          </li>
-          <li class="topperButton">
-            <a href="<?php echo $rel_url?>blog">Blog<a/>
+            <a href="<?php echo $rel_url?>corporate">Corporate Events<a/>
           </li>
           <li class="topperButton">
             <a href="<?php echo $rel_url?>multiday">Multi-day Tours<a/>
@@ -39,20 +43,17 @@
                 <li class="dropDownItem"><a href="<?php echo $rel_url?>faq">FAQ</a></li>
               </ul>
             </div>
+          </li>  
+          <li class="topperButton">
+            <a href="<?php echo $rel_url?>blog">Blog<a/>
           </li>
           <li class="topperButton">
-            <a href="<?php echo $rel_url?>corporate">Corporate Events<a/>
+            <a href="<?php echo $rel_url?>about">About Us<a/>
           </li>
           <li class="topperButton">
-            <a href="<?php echo $rel_url?>daytours">Day Tours<a/>
-            <div class="dropDown">
-              <ul>
-                <li class="dropDownItem"><a href="<?php echo $rel_url?>dayEasy">Canals, Lanes and Shopping</a></li>
-                <li class="dropDownItem"><a href="<?php echo $rel_url?>dayMedium">Historic River Towns</a></li>
-                <li class="dropDownItem"><a href="<?php echo $rel_url?>dayGems">New Jersey Countryside Gems</a></li>
-              </ul>
-            </div>
+            <a href="<?php echo $rel_url?>contact">Get in touch<a/>
           </li>
+          <a class="fh-topbar" href="https://fareharbor.com/bearbicycletouring/items/" onclick="FH.open({ shortname: 'bearbicycletouring', fullItems: 'yes' }); return false;">Book now</a>
         </ul>
       </div>
     </div>

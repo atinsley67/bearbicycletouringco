@@ -19,14 +19,25 @@
     height: auto;
   }
 
-  .bannerText {
-  	font-size: 12pt;
-  }
-
   .mainContent img {
     max-width: 100%;
     height: auto;
   }
+
+.bannerText p {
+    font-size: 12pt;
+}
+
+.bigger p {
+    font-size: 14pt;
+}
+
+.bannerSignature {
+    font-size: 10pt;
+    margin: 10px 15px;
+    color: #aaa;
+}
+
 
   /* Mobile friendly Menu */
 
@@ -52,13 +63,13 @@
   .topperButtonList {
     position: relative;
     top: 25px;
-    margin: 5px;
+    margin: 0px;
     padding-bottom:3px;
     z-index: 90;
 
     /* disable visibility by default, delay to enable clicks */
     visibility: hidden;
-    transition: visibility 0.5s;
+    transition: visibility 0.2s;
   }
 
   .topperMenu:focus, .topperMenu:active {
@@ -68,23 +79,21 @@
 
    .topperMenu:focus, .topperMenu:hover .topperButtonList{
     display: block;
-    background-color: #ddd;
     visibility: visible;
   }
 
 
-
   .topperButton {
-    /*float:right;*/
     background-color: #ddd;
-    /* top:  0px; */
+    float: left;
+    height: auto;
     min-height: 30px;
     min-width: 130px;
-    display: block;
+    left:-100px;
+    /*display: block;*/
     font-weight: normal;
-    margin-left:5px;
-    margin-top:0px;
-    padding: 3px 7px 0px 7px;
+    margin: 0px 0px 0px 0px;
+    padding: 3px 7px 3px 7px;
     text-align: center;
     vertical-align: center;
     position: relative;
@@ -98,14 +107,8 @@
   }
 
   .dropDown ul{
-    position: absolute;
-    top:28px;
-    left:-140px;
-    width:140px;
-    padding: 0;
-    margin: 0;
     display: none;
-    z-index: 100;
+
   }
 
   .topperButton:hover {
@@ -113,25 +116,15 @@
   }
 
   .topperButton:hover .dropDown ul {
-    display: block;
-    background-color: #ddd;
+    display: none;
   }
 
-  .dropDownItem {
-    background-color: #ddd;
-    float: left;
-    min-height: 25px;
-    width: 140px;
-    padding: 5px 5px 5px 5px;
-    font: bold;
+  .fh-topbar {
     position: relative;
-    list-style: none;
-    z-index: 100;
-    border-bottom: 1px solid #afdde9;
-  }
-
-  .dropDownItem:hover {
-    background-color: #ccc;
+    left: -100px;
+    width: 130px;
+    margin: 0px;
+    padding: 6px !important;
   }
 
   .pageBanner {
@@ -189,6 +182,9 @@
     margin: 5px;
   }
 
-
+  .dayTourCalendar {
+    width: 100%;
+    padding-left: 10px;
+  }
 
 }

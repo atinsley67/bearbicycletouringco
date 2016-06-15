@@ -16,6 +16,10 @@ body {
     overflow: auto
 }
 
+.mainContent h1{
+    font-size: 18px;
+}
+
 .contentFeature {
 	background-color: #f0f0f0;
 	padding: 8px;
@@ -75,15 +79,16 @@ body {
 
 
 .topperButton {
-    float:right;
+    float:left;
 	background-color: #ddd;
 	top:  0px;
 	height: 24px;
-    min-width: 80px;
+    min-width: 50px;
 	display: inline-block;
 	font-weight: normal;
     margin-left:5px;
     margin-top:5px;
+    margin-bottom:3px;
 	padding-top: 3px;
     padding-left: 7px;
     padding-right: 7px;	
@@ -93,6 +98,42 @@ body {
     font-size: 12pt;
     border-bottom: 2px solid #afdde9;
 }
+
+.fh-topbar {
+    background: #71bef0;
+    background: -moz-linear-gradient(top, #71bef0 1%, #178dd9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #71bef0), color-stop(100%, #178dd9));
+    background: -webkit-linear-gradient(top, #71bef0 1%, #178dd9 100%);
+    background: -ms-linear-gradient(top, #71bef0 1%, #178dd9 100%);
+    background: linear-gradient(top, #71bef0 1%, #178dd9 100%);
+    text-shadow: 0 -1px 1px #126fab !important;
+    color: #fff !important;
+    box-shadow: inset 1px 2px 2px 0 #b1dbf7, inset 1px -2px 2px 0 #1581c7, inset -1px 0 1px 0 #9fd3f5, inset -1px 0 1px 0 #178dd9;
+    border: 1px solid #229ae8 !important;
+    display: inline-block;
+    padding: 7px 15px 6px !important;
+    margin: 0px 3px 0px 5px;
+    font-size: 19px !important;
+    text-decoration: none;
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.025rem !important;
+    -webkit-border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    border-radius: 6px !important;
+}
+
+.fh-topbar:hover {
+    background: #55b1ed;
+    background: -moz-linear-gradient(top, #55b1ed 1%, #147bbd !important 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #55b1ed), color-stop(100%, #147bbd !important));
+    background: -webkit-linear-gradient(top, #55b1ed 1%, #147bbd !important 100%);
+    background: -ms-linear-gradient(top, #55b1ed 1%, #147bbd !important 100%);
+    background: linear-gradient(top, #55b1ed 1%, #147bbd !important 100%);
+    text-shadow: 0 -1px 1px #126ca6 !important;
+    box-shadow: inset 1 2px 2px 0 #b1dbf7, inset 1 -2px 2px 0 #1581c7, inset -1px 0 1px 0 #9fd3f5, inset -1px 0 2px 0 #178dd9;
+}
+
 
 .topperButton a {
 	color: inherit;
@@ -185,6 +226,24 @@ body {
     border-width:0;
 }
 
+.footerLinks {
+    float: right;
+    text-align: right;
+    padding-bottom: 20px
+}
+
+.footerLinks a{
+    color: #666;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.footerLinks img {
+    margin-bottom: 5px;
+    vertical-align:middle;
+}
+
 
 .bannerText{
     position: absolute;
@@ -196,16 +255,25 @@ body {
     height: 100%;
     width: 280px;
     top:0px;
-    font-size: 34px;
     color: #e8e8e8;
     text-align: right;
     vertical-align: bottom;
 }
 
+
 .bannerText p {
-	position: absolute;
-	bottom: 15px;
 	margin: 15px;
+    font-size: 19pt;
+}
+
+.bigger p {
+    font-size: 22pt;
+}
+
+.bannerSignature {
+    font-size: 16pt;
+    margin: 10px 15px;
+    color: #aaa;
 }
 
 .bannerText.long {
@@ -214,6 +282,7 @@ body {
 }
 
 .footer {
+    height: auto;
 	min-height: 35px;
 	background-color: #dddddd;
 	color: #505050;
@@ -246,7 +315,7 @@ body {
 
 
 .featureBox {
-	margin: 15px 0px 15px 0px;
+	margin: 15px 0px 20px 0px;
 	text-align: center;
 }
 
@@ -441,4 +510,11 @@ button.submit:active {
 
 .contactForm.emailForm input:required {
     background: #fff;
+}
+
+.dayTourCalendar {
+    float: right;
+    max-width: 400px;
+    max-width: 100%;
+    margin: 10px 0px 15px 15px;
 }
