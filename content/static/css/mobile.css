@@ -170,7 +170,8 @@
   }
 
   .rhLinks {
-    display: none;
+    /*display: none;*/
+    width:90%;
   }
 
   .post img {
