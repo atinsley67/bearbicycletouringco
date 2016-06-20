@@ -59,20 +59,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 		if (preg_match('/^\/blog\/\d{4}\/\d{2}\/.*/', $uri)) {
 			blog_showpost();
+
 		} elseif (preg_match('/^\/blog*/', $uri)) {
 			include("./app/top.html.php");
 			blog_mainpage();
 		} elseif (empty($uri) || $uri == "/") {
 			include("./app/top.html.php");
 			include("./static/indexContent.html");
+			include("app/bottom.html.php");
 		} elseif (is_file("./static/" . $uri . "Content.html")) {
 			include("./app/top.html.php");
 	    	include("./static/" . $uri . "Content.html");
+	    	include("app/bottom.html.php");
 	    } else {
 	    	echo "<h1>Opps! We don't have that page.</h1>";
 	    	echo "<p>" . $uri . "</p>";
+	    	include("app/bottom.html.php");
 	    }
-	    include("app/bottom.html.php");
 	}
 } else {
 	echo "<h1>Opps! We don't have that page.</h1>";
@@ -109,6 +112,7 @@ function blog_showpost() {
 	$rel_url = "../../../";
 	include("./app/top.html.php");
 	include("./app/blogpost.html.php");
+	include("./app/bottom.html.php");
 }
 
 ?>
