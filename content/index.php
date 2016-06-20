@@ -63,6 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		} elseif (preg_match('/^\/blog*/', $uri)) {
 			include("./app/top.html.php");
 			blog_mainpage();
+			include("./app/bottom.html.php");
 		} elseif (empty($uri) || $uri == "/") {
 			include("./app/top.html.php");
 			include("./static/indexContent.html");
