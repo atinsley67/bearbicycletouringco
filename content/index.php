@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     include("./app/bottom.html.php");
 
 } elseif ($_SERVER['REQUEST_METHOD'] === 'GET') {
-	if (preg_match('/^\/static\/.*/', $uri) || preg_match('/.*\.ico/', $uri) ){
+	if (preg_match('/^\/static\/.*/', $uri) || preg_match('/.*\.ico/', $uri) || preg_match('/google.*\.html/', $uri) ){
 	    return false;    // serve the requested resource as-is.
 	} else {
 	
