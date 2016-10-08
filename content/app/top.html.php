@@ -45,7 +45,7 @@
             </div>
           </li>  
           <li class="topperButton">
-            <a href="<?php echo $rel_url?>blog">Blog<a/>
+            <a href="<?php echo $rel_url?>blog/">Blog<a/>
           </li>
           <li class="topperButton">
             <a href="<?php echo $rel_url?>about">About Us<a/>

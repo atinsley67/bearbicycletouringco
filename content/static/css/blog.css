@@ -85,54 +85,87 @@ h1 a, h2 a{
 	text-decoration: none;
 }
 
+.list-image {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+    float: left;
+}
+.list-image img {
+    position: absolute;
+    margin: auto; 
+    min-height: 100%;
+    min-width: 100%;
+
+    /* For the following settings we set 100%, but it can be higher if needed 
+    See the answer's update */
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+}
+
 /*----------------------------
 	The left bar
 -----------------------------*/
 
+.aside {
+	width: 150px;
+	float:left;
+}
 
-aside{
-	position: fixed;
-	width: 250px;
+
+.blog_wrapper {
+	float: right;
+}
+/*
+.aside{
+	position: absolute;
+	width: 120px;
 	height: auto;
 	top: 0;
 	left: 50%;
 	bottom: 0;
 	margin-left: -460px;
 	padding-top: 65px;
-}
+	}
 
-aside p.description{
+.aside p.description{
 	font-size: 13px;
 	line-height: 1.8;
 	margin-bottom: 40px;
 	color:#787878;
 }
 
-aside ul{
+.aside ul{
 	font: bold 18px 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
 	list-style:none;
 }
 
-aside ul li a{
+.aside ul li a{
 	text-decoration:none !important;
 	display:inline-block;
 	padding:0 3px;
 	margin:2px 0 2px 10px;
 }
 
-aside ul li a:hover{
+.aside ul li a:hover{
 	background-color:#389dc1;
 	color:#fff;
 }
 
-aside p.author{
+.aside p.author{
 	position: absolute;
 	bottom: 20px;
 	height: 30px;
 	font-size: 12px;
 	color: #888;
 }
+
+*/
 
 
 /*----------------------------

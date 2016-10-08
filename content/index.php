@@ -57,14 +57,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		$rel_url = "";
 		$is_blog_post = false;
 
-		if (preg_match('/^\/blog\/\d{4}\/\d{2}\/.*/', $uri)) {
-			blog_showpost();
+		//if (preg_match('/^\/blog\/\d{4}\/\d{2}\/.*/', $uri)) {
+			//blog_showpost();
 
-		} elseif (preg_match('/^\/blog*/', $uri)) {
-			include("./app/top.html.php");
-			blog_mainpage();
-			include("./app/bottom.html.php");
-		} elseif (empty($uri) || $uri == "/") {
+		//} else
+		//if (preg_match('/^\/blog*/', $uri)) {
+		//	include("./app/top.html.php");
+		//	blog_mainpage();
+		//	include("./app/bottom.html.php");
+		//} else */
+		if (empty($uri) || $uri == "/") {
 			include("./app/top.html.php");
 			include("./static/indexContent.html");
 			include("app/bottom.html.php");
@@ -82,7 +84,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	echo "<h1>Opps! We don't have that page.</h1>";
 }
 
-function blog_mainpage() {
+/*function blog_mainpage() {
+
+	//include("app/includes/htmly/index.php");
 
 	$page = $_GET['page'];
 	$page = $page ? (int)$page : 1;
@@ -95,7 +99,7 @@ function blog_mainpage() {
  		echo "<h1>Opps! We don't have that page.</h1>";
  	} else {
 	 	include("./app/blogmain.html.php");
- 	}
+ 	} 
 
 }
 
@@ -114,6 +118,6 @@ function blog_showpost() {
 	include("./app/top.html.php");
 	include("./app/blogpost.html.php");
 	include("./app/bottom.html.php");
-}
+} */
 
 ?>
