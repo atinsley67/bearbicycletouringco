@@ -3,3 +3,9 @@ os: linux
 files:
   - source: content
     destination: /var/www/html/
+hooks:
+  BeforeInstall:
+    - location: Scripts/install_before.sh
+  AfterInstall:
+    - location: Scripts/install_after.sh
+      timeout: 180
