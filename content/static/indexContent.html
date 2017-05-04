@@ -37,7 +37,6 @@
           </article>
       </div>
   </div>
-  <script>$('.wmuSlider').wmuSlider();</script>
 </div>
 <div class="mainContent">
     <?php include 'static/rhLinks.html' ?>
@@ -119,6 +118,10 @@
     </div>
 </div>
 <p/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"/></script>
-<script src="<?php echo $rel_url?>static/wmuSlider-master/jquery.wmuSlider.min.js"/></script>
-<script>$('.wmuSlider').wmuSlider();</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"/>
+<script src="<?php echo $rel_url?>static/wmuSlider-master/jquery.wmuSlider.min.js" />
+<script>
+window.onload = function() {
+  init();
+  $('.wmuSlider').wmuSlider();
+}; </script>
