@@ -44,11 +44,13 @@
       ga('send', 'pageview');
     </script>
     <script>
-        if ($.isFunction($('.wmuSlider').wmuSlider)) {
-            $(window).load(function() {
-                // executes when complete page is fully loaded, including all frames, objects and images
-                $('.wmuSlider').wmuSlider();
-            });
+        if ($('.wmuSlider') != null) {
+            if ($.isFunction($('.wmuSlider').wmuSlider)) {
+                $(window).load(function() {
+                    // executes when complete page is fully loaded, including all frames, objects and images
+                    $('.wmuSlider').wmuSlider();
+                });
+            }
         }
     </script>
   </body>
