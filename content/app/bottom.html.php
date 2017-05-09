@@ -44,7 +44,7 @@
       ga('send', 'pageview');
     </script>
     <script>
-        if ($('.wmuSlider') != null) {
+        if (if (typeof $== 'function')) {
             if ($.isFunction($('.wmuSlider').wmuSlider)) {
                 $(window).load(function() {
                     // executes when complete page is fully loaded, including all frames, objects and images
