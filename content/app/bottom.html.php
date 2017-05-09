@@ -48,7 +48,7 @@
             if ($.isFunction($('.wmuSlider').wmuSlider)) {
                 $(window).load(function() {
                     // executes when complete page is fully loaded, including all frames, objects and images
-                    $('.wmuSlider').wmuSlider();
+                    setTimeout($('.wmuSlider').wmuSlider(), 1000);
                 });
             }
         }
