@@ -34,7 +34,7 @@
 .wmuSlider .wmuSliderWrapper article img {
     max-width: 100%;
     width: auto;
-    height: auto;
+    height: 350px;
 }
 
 /* mwuGallery */
@@ -45,7 +45,7 @@
 .wmuGallery .wmuGalleryImage img {
     max-width: 100%;
     width: auto;
-    height: auto;
+    height: 350px;
 }
 
 /* Default Skin */
