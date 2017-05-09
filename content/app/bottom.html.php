@@ -42,6 +42,14 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-79364118-1', 'auto');
       ga('send', 'pageview');
-</script>
+    </script>
+    <script>
+        if ($.isFunction($('.wmuSlider').wmuSlider)) {
+            $(window).load(function() {
+                // executes when complete page is fully loaded, including all frames, objects and images
+                $('.wmuSlider').wmuSlider();
+            });
+        }
+    </script>
   </body>
 </html>
