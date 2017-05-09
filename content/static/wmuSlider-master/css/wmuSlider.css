@@ -29,6 +29,7 @@
 .wmuSlider .wmuSliderWrapper article {
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 .wmuSlider .wmuSliderWrapper article img {
     max-width: 100%;
