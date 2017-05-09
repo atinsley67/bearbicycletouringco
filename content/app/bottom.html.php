@@ -44,14 +44,7 @@
       ga('send', 'pageview');
     </script>
     <script>
-        if (typeof $== 'function') {
-            if ($.isFunction($('.wmuSlider').wmuSlider)) {
-                $(window).load(function() {
-                    // executes when complete page is fully loaded, including all frames, objects and images
-                    setTimeout($('.wmuSlider').wmuSlider(), 1000);
-                });
-            }
-        }
+        $('.wmuSlider').wmuSlider()
     </script>
   </body>
 </html>
