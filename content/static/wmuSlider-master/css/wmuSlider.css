@@ -21,6 +21,7 @@
     overflow: hidden;
 }
 .wmuSlider .wmuSliderWrapper {
+    display: none;
     max-width: 750px;
     text-align: center;
     margin: 0 auto;
