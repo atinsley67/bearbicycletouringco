@@ -46,6 +46,7 @@
     <script>
         $('.wmuSlider').wmuSlider()
         $(".wmuSlider").css("display", "block");
+        $(".wmuSliderWrapper").css("display", "block");
     </script>
   </body>
 </html>
