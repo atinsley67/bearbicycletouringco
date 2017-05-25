@@ -40,6 +40,7 @@
               <ul>
                 <li class="dropDownItem"><a href="<?php echo $rel_url?>delaware">Tour of the Delaware Valley</a></li>
                 <li class="dropDownItem"><a href="<?php echo $rel_url?>easton">Easton two-day</a></li>
+                <li class="dropDownItem"><a href="<?php echo $rel_url?>catskills">Camping in the Catskills</a></li>
                 <li class="dropDownItem"><a href="<?php echo $rel_url?>faq">FAQ</a></li>
               </ul>
             </div>
